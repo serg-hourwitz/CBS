@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1145px;
+    /* border: 1px solid #000; */
+}
+
+/* COMMON END */
+/* ЗАГАЛЬНІ СТИЛІ */
+
+/* HEADER START */
+
+header{
+    background-color: #BEB7D8;
+    user-select: none;
+}
+
+.main-top{
+    padding: 24.5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 
+        height: 90px;
+        display: flex;
+        align-items: center;
+    */
+}
+
+.logo{
+    width: 150px;
+    height: 35px;
+}
+
+.contacts{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+a{
+    color: #383838;
+    text-decoration: none;
+    font-size: 12px;
+}
+a:hover {
+    color: #FFFFFF;
+}
+
+/* .icon{
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-right: 30px;
+}
+
+.phone{
+    background-image: url('images/icons/phone\ icon.svg');
+}
+
+.skype{
+    background-image: url('images/icons/Skype\ icon.svg'); 
+}
+.tg{
+    background-image: url('images/icons/telegram\ icon.svg');
+} */
+
+.icon{
+    margin-right: 30px;
+    position: relative;
+}
+.icon:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background-repeat: no-repeat;
+}
+
+.phone:before{
+    background-image: url('img/phone\ icon.svg');
+}
+
+.skype:before{
+    background-image: url('img/Skype\ icon.svg'); 
+}
+.tg:before{
+    background-image: url('img/telegram\ icon.svg');
+}
+
+.btn{
+    width: 165px;
+    height: 40px;
+    background-color: #006BA7;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    color: #006BA7;
+    border: 2px solid #006BA7;
+    background-color: #FFFFFF;
+}
+
+.callback{
+    width: 180px;
+}
+
+/* HEADER END */
+
+h1{
+    color: #006BA7;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+p{
+    color: #383838;
+    font-size: 18px;
+}
+
+.title-section{
+    text-align: center;
+    padding: 90px 0;
+    background-image: url('images/laptop\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: 313px 239px;
+    background-position: right bottom;
+}
+
+.btns{
+    margin-top: 50px;
+    user-select: none;
+}
+.btns button{
+    margin: 0 13px;
+}
+
+/* FIRST SECTION END */
+
+/* SECOND SECTION START */
+
+.second-section{
+    background-color: #BEB7D8;
+    padding: 70px 0 30px;
+}
+
+.information{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info{
+    width: 335px;
+    /* border: 2px solid red; */
+    color: #383838;
+    font-size: 14px;
+    line-height: 18.5px;
+    min-height: 145px;
+}
+b{
+    display: block;
+}
+
+b:hover {
+    color: #FFFFFF;
+}
+
+/* SECOND SECTION END */
+/* FOOTER START */
+
+footer{
+    background-color: #383838;
+    padding: 12px;
+    text-align: center;
+}
+
+footer p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+@media(max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+    }
+    .title-section {
+        background-position: center bottom;
+    }
+}
+@media(max-width: 576px) {
+    .main-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        margin-right: 0;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    .contacts a {
+        margin-bottom: 10px;
+    }
+    .callback-btn {
+        margin-top: 30px;
+    }
+    .btns button {
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .info {
+        padding: 0 10px ;
+    }
+}
+@media(max-width: 320px) {
+    h1 {
+        font-size: 1.3em;
+    }
+}
